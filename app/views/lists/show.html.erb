@@ -14,7 +14,7 @@
           </div>
           <div class="card-body">
             <p>"<%= bookmark.comment %> </p>
-            <p> <%= link_to "Delete", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></p>
+            <div class="btn btn-info"> <%= link_to "delete", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %> </div>
           </div>
         </div>
       <% end %>
